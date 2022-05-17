@@ -22,6 +22,8 @@ public class Mentoria extends Entity<MentoriaId> {
         this.directices = new HashSet<>();
     }
 
+
+
     public void agregarDirectiz(Directiz directiz){
         //TODO: validaciones
         this.directices.add(directiz);

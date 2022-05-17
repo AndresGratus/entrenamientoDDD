@@ -36,6 +36,8 @@ public class Curso extends AggregateEvent<CursoId> {
         return curso;
     }
 
+
+
     public void agregarMentoria( Nombre nombre, Fecha fecha){
         var mentoriaId = new MentoriaId();
         appendChange(new MentoriaCreada(mentoriaId, nombre, fecha)).apply();
